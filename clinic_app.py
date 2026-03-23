@@ -11,7 +11,7 @@ import re
 from datetime import datetime
 
 # --- CONFIG ---
-GEMINI_API_KEY = "AIzaSyCIYz00qHQxvmCGdciwv6R6H6pOflQJGjc" 
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"] 
 
 client = genai.Client(
     api_key=GEMINI_API_KEY,
